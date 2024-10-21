@@ -1,0 +1,244 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner {
+    background-color: #acc6e0;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.banner-name {
+    flex: 2;
+    text-align: center;
+    font-family: 'Century Gothic', sans-serif;
+    color: black;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-buttons {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btn-custom {
+    margin: 5px;
+    color: black;
+    background-color: transparent;
+    border: none;
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    border-bottom: 2px solid black;
+}
+
+.btn-separator {
+    border-left: 1px solid black;
+    height: 25px;
+    }
+.rating {
+    display: inline-block;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+.float-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 2px 2px 5px #999;
+    z-index: 1;
+}
+
+.float-btn:hover {
+    background-color: #2980b9;
+}
+
+.content {
+    padding: 20px;
+    margin-bottom: 70px;
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-bottom: 10px;
+}
+
+footer .copyright {
+    font-family: 'Century Gothic', sans-serif;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #000000;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        width: 80%;
+        margin: 20px auto;
+    }
+    
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 2;
+        color: #000000;
+        max-width: 300px;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 5px;
+        border-radius: 8px;
+        margin-top: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.15s ease-in-out;
+    }
+    
+    .card:hover {
+        transform: scale(1.05);
+    }
+    
+    .card-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .card-header-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .user-info {
+        font-size: 0.8rem;
+        margin: 0;
+    }
+    
+    .comment-rating {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .comment-rating svg {
+        height: 1rem;
+        width: 1rem;
+        margin-right: 2px;
+        fill: #FFD700;
+    }
+    
+    .comment-content {
+        font-size: 0.875rem;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        width: 80%;
+        margin: 20px auto;
+    }
+    
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 2;
+        color: #000000;
+        max-width: 300px;
+        width: 100%;
+        background-color: #fff;
+        padding: 5px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.15s ease-in-out;
+    }
+    
+    .card:hover {
+        transform: scale(1.05);
+    }
+    
+    .card-header,
+    .card-header-info,
+    .comment-rating,
+    .comment-content {
+        padding: 10px;
+    }
+    
+    .user-info {
+        font-size: 0.8rem;
+        margin: 0;
+    }
+    
+    .comment-rating svg {
+        height: 1rem;
+        width: 1rem;
+        margin-right: 2px;
+        fill: #FFD700;
+    }
+    
+    .comment-content {
+        font-size: 0.875rem;
+    }
+    /* Estilos específicos para dispositivos móviles */
+/* Estilos específicos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #000000;
+        color: #ffffff; /* Texto en color blanco para legibilidad en fondos oscuros */
+    }
+
+    .container {
+        width: 90%;
+        margin: auto; /* Centra el contenido */
+    }
+
+    .card {
+        max-width: 100%; /* Ocupa el ancho completo en dispositivos móviles */
+    }
+}
