@@ -1,127 +1,355 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="es" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Language" content="es">
-    <link rel="stylesheet" href="Style.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lavandería Spring · Antigua Guatemala</title>
+  <meta name="description" content="Lavandería Spring: lavandería familiar en Antigua Guatemala desde 2000. Lavado, secado, planchado, edredones, zapatos y servicio a domicilio.">
+  <meta name="theme-color" content="#14213D">
+  <link rel="icon" href="IMG/logolavanderia.png">
+  <link rel="apple-touch-icon" href="IMG/logolavanderia.png">
+
+  <!-- Cómo se ve el enlace al compartirlo por WhatsApp o Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lavandería Spring · Antigua Guatemala">
+  <meta property="og:description" content="Lavado, secado, planchado y servicio a domicilio. La dejas hoy, la recoges mañana.">
+  <meta property="og:image" content="https://ronald411.github.io/Lavanderia/IMG/Fachada.png">
+  <meta property="og:url" content="https://ronald411.github.io/Lavanderia/">
+
+  <!-- Información para Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DryCleaningOrLaundry",
+    "name": "Lavandería Spring",
+    "url": "https://ronald411.github.io/Lavanderia/",
+    "logo": "https://ronald411.github.io/Lavanderia/IMG/logolavanderia.png",
+    "image": "https://ronald411.github.io/Lavanderia/IMG/Fachada.png",
+    "telephone": "+50245451368",
+    "foundingDate": "2000",
+    "address": { "@type": "PostalAddress", "addressLocality": "Antigua Guatemala", "addressCountry": "GT" },
+    "openingHours": ["Mo-Sa 08:00-18:30", "Su 09:00-18:00"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Hanken+Grotesk:wght@400;500;600;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <script>document.documentElement.className = "js";</script>
+  <link rel="stylesheet" href="CSS/Estilos.css">
+  <script src="JS/main.js" defer></script>
 </head>
-
 <body>
-    <div class="banner">
-        <div class="logo">
-            <img src="logo.png" alt="Logo">
+
+  <header class="cabecera">
+    <div class="wrap nav">
+      <a href="#inicio" class="marca" aria-label="Lavandería Spring, inicio">
+        <img src="IMG/logolavanderia.png" alt="" width="54" height="54">
+        <span><b>Lavandería Spring</b><small>Antigua Guatemala</small></span>
+      </a>
+      <div class="nav-derecha">
+        <nav class="menu" id="menu" aria-label="Principal">
+          <a href="#como">Cómo funciona</a>
+          <a href="#precios">Precios</a>
+          <a href="#tendedero">Opiniones</a>
+          <a href="#visita">Visítanos</a>
+        </nav>
+        <a class="btn btn-azul btn-nav" href="https://api.whatsapp.com/send?phone=50245451368&text=Hola,%20quisiera%20informaci%C3%B3n%20sobre%20los%20servicios" target="_blank" rel="noopener">WhatsApp</a>
+        <button class="menu-btn" aria-label="Abrir menú" aria-controls="menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="wrap hero">
+    <div class="hero-texto" data-revelar="izq">
+      <div>
+        <span id="estado" class="estado">Lun a sáb 8:00–18:30 · Dom 9:00–18:00</span>
+        <h1>Tu ropa, como <em>recién comprada.</em></h1>
+        <p>Somos una lavandería familiar en el centro de Antigua. Desde el año 2000 lavamos, secamos y doblamos la ropa de viajeros y vecinos — con el mismo cuidado que la nuestra.</p>
+        <div class="botones">
+          <a class="btn btn-azul" href="https://api.whatsapp.com/send?phone=50245451368&text=Hola,%20quisiera%20agendar%20un%20lavado" target="_blank" rel="noopener">Agendar mi lavado</a>
+          <a class="btn btn-borde" href="#precios">Ver precios</a>
         </div>
-        <div class="banner-name">
-            <h2>LAVANDERIA SPRING</h2>
-            <p>EXPLORA NUESTROS SERVICIOS</p>
-        </div>
-        <div class="banner-buttons">
-            <a href="index.html">
-                <button class="btn btn-custom">NOSOTROS</button>
-            </a>
-            <div class="btn-separator"></div>
-            <a href="producto.html">
-                <button class="btn btn-custom">PRODUCTOS</button>
-            </a>
-            <div class="btn-separator"></div>
-            <a href="contacto.html">
-                <button class="btn btn-custom">CONTACTO</button>
-            </a>
-        </div>
-        <div class="banner-text" style="text-align: center; margin-top: 20px;">
-            <img src="TELEFONO.png" alt="Telefono" style="height: 20px; display: inline; margin-right: 10px;">
-            <p style="font-size: 18px; display: inline;">Tel: <a href="tel:+50245451368" class="phone-number">+502 45451368</a></p>
-            <p style="font-size: 18px; overflow: hidden;">    Tel: <a href="tel:+50245451368" class="phone-number">+502 43177021</a></p>
-        </div>
+      </div>
+      <div class="nota">
+        <svg width="54" height="40" viewBox="0 0 54 40" fill="none" stroke="#E2312D" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M2 30c10-2 22-10 30-22"/><path d="M24 8h8v8"/></svg>
+        <span class="mano">¡la dejas hoy, la recoges mañana!</span>
+      </div>
     </div>
 
-    <h9>ㅤ</h9>
+    <div class="carrusel" data-revelar="der" aria-roledescription="carrusel" aria-label="Nuestros servicios">
+      <div class="pantalla">
+        <div class="slide f-lavado activo" aria-label="1 de 4">
+          <div class="etiqueta"><div><em>Lavado</em><b>Q7</b><span>por libra</span></div></div>
+          <div class="slide-texto">
+            <small>01 — Lavado y secado</small>
+            <strong>Huele a limpio desde que abres la bolsa.</strong>
+            <span>Lavamos, secamos y doblamos tu ropa con productos de primera.</span>
+          </div>
+        </div>
+        <div class="slide f-planchado" aria-label="2 de 4">
+          <div class="etiqueta"><div><em>Planchado</em><b>Q8</b><span>por prenda</span></div></div>
+          <div class="slide-texto">
+            <small>02 — Planchado</small>
+            <strong>Camisas impecables, sin una arruga.</strong>
+            <span>Planchamos prenda por prenda, lista para usar.</span>
+          </div>
+        </div>
+        <div class="slide f-domicilio" aria-label="3 de 4">
+          <div class="etiqueta"><div><em>Entrega</em><b>24 h</b><span>o menos</span></div></div>
+          <div class="slide-texto">
+            <small>03 — A domicilio</small>
+            <strong>Vamos por tu ropa a tu hotel o casa.</strong>
+            <span>Recogemos y entregamos en Antigua y alrededores.</span>
+          </div>
+        </div>
+        <div class="slide f-edredones" aria-label="4 de 4">
+          <div class="etiqueta"><div><em>Edredón</em><b>Q30</b><span>desde</span></div></div>
+          <div class="slide-texto">
+            <small>04 — Edredones y zapatos</small>
+            <strong>Hasta lo que parecía perdido.</strong>
+            <span>Edredones, zapatos y equipo con barro: vuelven como nuevos.</span>
+          </div>
+        </div>
 
-    <a href="comentarios.html">
-        <button class="float-btn">Comentarios</button>
-    </a>
+        <div class="progreso"><div></div></div>
+        <div class="flechas">
+          <button class="flecha" data-dir="-1" aria-label="Anterior"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button class="flecha" data-dir="1" aria-label="Siguiente"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+        </div>
+      </div>
+      <div class="miniaturas">
+        <button class="mini activo" aria-label="Ver lavado y secado"><i class="f-lavado"></i><span>Lavado y secado</span></button>
+        <button class="mini" aria-label="Ver planchado"><i class="f-planchado"></i><span>Planchado</span></button>
+        <button class="mini" aria-label="Ver servicio a domicilio"><i class="f-domicilio"></i><span>A domicilio</span></button>
+        <button class="mini" aria-label="Ver edredones y zapatos"><i class="f-edredones"></i><span>Edredones y zapatos</span></button>
+      </div>
+    </div>
+  </section>
 
-    <div id="google_translate_element"></div>
+  <!-- CINTA -->
+  <div class="cinta" aria-hidden="true">
+    <div class="cinta-pista">
+      <span>Lavado</span><span>✦</span><span>Secado</span><span>✦</span><span>Doblado</span><span>✦</span><span>Planchado</span><span>✦</span><span>Edredones</span><span>✦</span><span>Zapatos</span><span>✦</span><span>A domicilio</span><span>✦</span>
+      <span>Lavado</span><span>✦</span><span>Secado</span><span>✦</span><span>Doblado</span><span>✦</span><span>Planchado</span><span>✦</span><span>Edredones</span><span>✦</span><span>Zapatos</span><span>✦</span><span>A domicilio</span><span>✦</span>
+    </div>
+  </div>
 
-    <div class="kodfun-galery">
-        <div style="background-image: url('pesa.jpg');"></div>
-        <div style="background-image: url('Clientes5.jpg');"></div>
-        <div style="background-image: url('Fachada.png');"></div>
-        <div style="background-image: url('clientes.jpg');"></div>
-        <div style="background-image: url('clientes3.jpg');"></div>
+  <!-- CÓMO FUNCIONA -->
+  <section id="como" class="wrap seccion">
+    <div class="encabezado" data-revelar>
+      <h2>Así de sencillo.</h2>
+      <p>Te damos tu ticket, pesamos tu ropa enfrente de ti y te avisamos cuando está lista.</p>
+    </div>
+    <div class="ticket" data-revelar>
+      <div class="ticket-num">
+        <small>Ticket</small>
+        <b>Nº 0247</b>
+        <span class="mano">lista mañana 12:00</span>
+      </div>
+      <div class="pasos" data-escalonar>
+        <div class="paso"><i>1.</i><b>Tráela o la recogemos</b><span>Pasa por el local o escríbenos y vamos por ella a tu hotel o casa.</span></div>
+        <div class="paso"><i>2.</i><b>La pesamos contigo</b><span>Pagas el precio exacto por tu cantidad de ropa. Sin sorpresas.</span></div>
+        <div class="paso"><i>3.</i><b>La recoges doblada</b><span>En menos de 24 horas. Si no puedes venir, te la guardamos.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRECIOS -->
+  <section id="precios" class="wrap seccion">
+    <h2 data-revelar>Precios <em>honestos.</em></h2>
+    <p class="sub" data-revelar style="margin-top:12px">Como en la etiqueta de tu ropa: claro y sin letra pequeña.</p>
+    <div class="precios" data-escalonar>
+      <div class="precio"><div>
+        <svg width="34" height="34" viewBox="0 0 32 32" fill="none" stroke="#1D3FAF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9l3 17h18l3-17"/><path d="M4 9c3 2 5 2 8 0s5-2 8 0 5 2 8 0"/></svg>
+        <b>Lavado y secado</b><p>Lavamos, secamos y doblamos.</p>
+        <span class="monto">Q7 <small>/ libra</small></span>
+      </div></div>
+      <div class="precio"><div>
+        <svg width="34" height="34" viewBox="0 0 32 32" fill="none" stroke="#1D3FAF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 24h26c0-6-4-11-12-11h-6l-2-4h-4"/><circle cx="13" cy="19" r="1" fill="#1D3FAF"/><circle cx="19" cy="19" r="1" fill="#1D3FAF"/></svg>
+        <b>Planchado</b><p>Lista para usar, sin arrugas.</p>
+        <span class="monto">Q8 <small>/ prenda</small></span>
+      </div></div>
+      <div class="precio"><div>
+        <svg width="34" height="34" viewBox="0 0 32 32" fill="none" stroke="#1D3FAF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="24" height="24" rx="2"/><circle cx="16" cy="16" r="8"/></svg>
+        <b>Edredones</b><p>Lavado y secado profundo.</p>
+        <span class="monto"><small>desde </small>Q30</span>
+      </div></div>
+      <div class="precio"><div>
+        <svg width="34" height="34" viewBox="0 0 32 32" fill="none" stroke="#1D3FAF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22V12l6-2 4 5 8 2c4 1 6 3 6 5v2H4z"/><path d="M4 22h24"/></svg>
+        <b>Zapatos</b><p>Te los devolvemos como nuevos.</p>
+        <span class="monto">Q35 <small>/ par</small></span>
+      </div></div>
+      <div class="precio oscuro"><div>
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 16V7h11v9"/><path d="M14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>
+        <b>A domicilio</b><p>Recogemos en Antigua y alrededores.</p>
+        <a class="btn btn-blanco" href="https://api.whatsapp.com/send?phone=50245451368&text=Hola,%20quisiera%20agendar%20una%20recogida" target="_blank" rel="noopener">Agendar</a>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- POR DENTRO -->
+  <section id="local" class="wrap seccion">
+    <div class="encabezado" data-revelar>
+      <h2>Así es <em>por dentro.</em></h2>
+      <p>Un local familiar en el corazón de Antigua, con más de 20 años de oficio.</p>
+    </div>
+    <div class="galeria" data-escalonar>
+      <figure>
+        <img src="IMG/pesa.jpg" alt="Báscula con ropa en el mostrador" loading="lazy">
+        <figcaption><b>La báscula</b>Pesamos tu ropa enfrente de ti.</figcaption>
+      </figure>
+      <figure>
+        <img src="IMG/clientes4.jpg" alt="Lavadoras y secadoras de la lavandería" loading="lazy">
+        <figcaption><b>Nuestras máquinas</b>Lavamos y secamos en el local.</figcaption>
+      </figure>
+      <figure>
+        <img src="IMG/utensilios.jpg" alt="Estantes con bolsas de ropa lista para entregar" loading="lazy">
+        <figcaption><b>Todo en orden</b>Cada bolsa con su ticket.</figcaption>
+      </figure>
+      <figure>
+        <img src="IMG/zapatos.jpg" alt="Tenis blancos recién lavados" loading="lazy">
+        <figcaption><b>Zapatos</b>Tenis y zapatos, como nuevos.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- OPINIONES -->
+  <section id="tendedero" class="wrap seccion">
+    <h2 data-revelar>Lo que cuelgan <em>nuestros clientes.</em></h2>
+    <div class="tendedero">
+      <svg class="cuerda" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 8 Q600 64 1200 8" fill="none" stroke="#8C95AD" stroke-width="1.5"/></svg>
+      <!-- Para agregar opiniones nuevas copia un bloque <figure> y cambia el texto, el nombre y la fecha -->
+      <div class="ropa" data-escalonar="caer">
+        <figure class="opinion">
+          <blockquote>“La ropa de moto venía llena de barro y casi parece nueva. No encontramos nada igual en todo el viaje.”</blockquote>
+          <figcaption><b>Shona T.</b> <span>· nov 2023</span></figcaption>
+        </figure>
+        <figure class="opinion">
+          <blockquote>“Después de semanas viajando, el lugar ideal. Ropa perfecta, precios justos y lista el mismo día.”</blockquote>
+          <figcaption><b>Makenzie P.</b> <span>· ene 2023</span></figcaption>
+        </figure>
+        <figure class="opinion">
+          <blockquote>“¡Hasta sacaron una mancha morada de mi sombrero blanco! Todo volvió doblado en menos de 24 horas.”</blockquote>
+          <figcaption><b>Isabelle L.</b> <span>· mar 2022</span></figcaption>
+        </figure>
+      </div>
     </div>
 
-    <main>
-        <section class="principal">
-            <h2 class="titulo-principal"><strong>SOBRE NUESTRA LAVANDERIA</strong></h2>
-            <img class="logospring" src="digitalizado.jpg" alt="Cartel Lavanderia Spring">
-            <h9>ㅤ</h9>
-            <div class="centered-text">
-                <p>Ubicada en el corazón de la ciudad de la Antigua Guatemala y con mas de 20 años de experiencia, la <strong>Lavanderia Spring</strong> trae para al mercado lo mejor en servicio para lavanderia, ya que tenemos lo mejor en cuidado de ropa y planchado a precios accesibles</p>
-                <p id="mision"><strong><em>Nuestra misión es: </em></strong></p>
-                <p>" Ofrecer una solución integral de lavado, secado y planchado de pendas para hoteles, restaurantes, turistas y personas locales con los mejores productos de limpieza y el mejor servicio"</strong>.</p>
-                <p id="mision"><strong><em>Nuestra vision es: </em></strong></p>
-                <p>" Convertirnos en la empresa preferida para el cuidad de las prendas en Antigua Guatemala y ser líder en calidad y servicio, ofreciendo comodidad a cada uno de nuestros clientes"</p>
-            </div>
-        </section>
+    <div class="resenas-cta" data-revelar>
+      <div>
+        <b>¿Ya nos visitaste?</b>
+        <span>Tu opinión ayuda a otros viajeros a encontrarnos.</span>
+      </div>
+      <div class="botones">
+        <!-- CAMBIA ESTO: pega aquí el enlace "Pedir reseñas" de tu Perfil de Empresa en Google -->
+        <a class="btn btn-azul" href="https://maps.google.com/?cid=13900456104039172970" target="_blank" rel="noopener">Déjanos tu reseña</a>
+        <a class="btn btn-borde" href="https://maps.google.com/?cid=13900456104039172970" target="_blank" rel="noopener">Ver todas en Google</a>
+      </div>
+    </div>
+  </section>
 
-        <section class="mapa">
-            <div class="mapa-contenedor">
-                <h3 class="titulo-principal">Nuestra Ubicación</h3>
-                <p>Nuestro establecimiento está ubicado en el corazón de la ciudad</p>
-                <div class="mapa-contenido">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15447.102780048435!2d-90.72968889999997!3d14.5548157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85890fd7344d40db%3A0xc0e8572dc92a4b6a!2sSpring%20Laundry!5e0!3m2!1ses!2sgt!4v1682664072371!5m2!1ses!2sgt" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </section>
+  <!-- VISÍTANOS -->
+  <section id="visita" class="wrap visita">
+    <div class="visita-foto f-fachada" data-revelar="izq" role="img" aria-label="Fachada de Lavandería Spring">
+      <span class="mano">¡aquí te esperamos!</span>
+    </div>
+    <div class="visita-info" data-revelar="der">
+      <h2>Visítanos</h2>
+      <!-- CAMBIA ESTO: escribe la dirección exacta en la primera línea -->
+      <address>En el centro de la ciudad<br>Antigua Guatemala, Sacatepéquez</address>
+      <div class="horario">
+        <div data-dias="1,2,3,4,5,6"><span>Lunes a sábado</span><span>8:00 – 18:30</span></div>
+        <div data-dias="0"><span>Domingo</span><span>9:00 – 18:00</span></div>
+      </div>
+      <div class="tels">
+        <a href="tel:+50245451368">+502 4545 1368</a>
+        <a href="tel:+50243177021">+502 4317 7021</a>
+      </div>
+      <div class="botones">
+        <a class="btn btn-blanco" href="https://maps.google.com/?cid=13900456104039172970" target="_blank" rel="noopener">Cómo llegar</a>
+        <a class="btn btn-borde-claro" href="https://www.facebook.com/profile.php?id=100082975130539" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="mapa" data-revelar="zoom">
+      <iframe title="Mapa de Lavandería Spring en Antigua Guatemala"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15447.102780048435!2d-90.72968889999997!3d14.5548157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85890fd7344d40db%3A0xc0e8572dc92a4b6a!2sSpring%20Laundry!5e0!3m2!1ses!2sgt!4v1682664072371!5m2!1ses!2sgt"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </section>
 
-        <section class="diferenciales">
-            <h3 class="titulo-principal">Diferencias ante otras compañias </h3>
-            <div class="contenido-diferenciales">
-                <ul class="lista-diferenciales">
-                    <li class="items">Atención personalizada la competencia</li>
-                    <li class="items">Calidad de limpieza</li>
-                    <li class="items">Localización</li>
-                    <li class="items">Personal experimetado</li>
-                    <li class="items">Puntualidad</li>
-                    <li class="items">Buenas instalaciones</li>
-                    <li class="items">Almacenamos tu ropa si no puedes recogerla en el momento</li>
-                    <li class="items">Garantia de seguridad</li>
-                    <li class="items">Precio exacto por tu cantidad de ropa</li>
-                </ul>
-                <img src="clientes10.jpg" class="imagen-clientes">
-                <h9>ㅤ</h9>
-            </div>
-            <div class="video">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/JojlVbXFUHM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </section>
-    </main>
+  <!-- LLAMADO FINAL -->
+  <section class="wrap llamado">
+    <div class="llamado-tarjeta" data-revelar="zoom">
+      <span class="burbuja b1" aria-hidden="true"></span>
+      <span class="burbuja b2" aria-hidden="true"></span>
+      <span class="burbuja b3" aria-hidden="true"></span>
+      <div>
+        <h2>¿Ropa sucia? <em>Nosotros nos encargamos.</em></h2>
+        <p>Escríbenos y pasamos por ella a tu hotel o casa en Antigua.</p>
+      </div>
+      <div class="botones">
+        <a class="btn btn-blanco" href="https://api.whatsapp.com/send?phone=50245451368&text=Hola,%20quisiera%20agendar%20un%20lavado" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+        <a class="btn btn-borde-claro" href="tel:+50245451368">Llámanos</a>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <div>
-            <img src="logonegro.png.jpg" alt="Logo lavanderia spring" class="logospring1">
-            <p class="copyright">&copy; Derechos de autor de Lavanderia Spring - 2000</p>
+  <!-- FOOTER -->
+  <svg class="ola" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true"><path d="M0 24 C 240 0 480 48 720 24 S 1200 0 1440 24 V48 H0 Z" fill="currentColor"/></svg>
+  <footer class="pie-pagina">
+    <div class="wrap pie-grid" data-escalonar>
+      <div>
+        <a href="#inicio" class="pie-marca">
+          <img src="IMG/logolavanderia.png" alt="" width="92" height="92" loading="lazy">
+          <span><b>Lavandería Spring</b><small>Antigua Guatemala · desde 2000</small></span>
+        </a>
+        <p>Lavandería familiar en el centro de Antigua. Lavamos, secamos y doblamos la ropa de vecinos y viajeros.</p>
+        <div class="redes">
+          <a href="https://api.whatsapp.com/send?phone=50245451368" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="https://www.facebook.com/profile.php?id=100082975130539" target="_blank" rel="noopener">Facebook</a>
         </div>
-    </footer>
+      </div>
+      <div>
+        <h3>La página</h3>
+        <ul>
+          <li><a href="#como">Cómo funciona</a></li>
+          <li><a href="#precios">Precios</a></li>
+          <li><a href="#local">Por dentro</a></li>
+          <li><a href="#tendedero">Opiniones</a></li>
+          <li><a href="#visita">Visítanos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contacto</h3>
+        <ul>
+          <li><a href="tel:+50245451368">+502 4545 1368</a></li>
+          <li><a href="tel:+50243177021">+502 4317 7021</a></li>
+          <li>Centro de Antigua Guatemala</li>
+          <li><a href="https://maps.google.com/?cid=13900456104039172970" target="_blank" rel="noopener">Cómo llegar →</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Horario</h3>
+        <ul>
+          <li data-dias="1,2,3,4,5,6">Lunes a sábado<br>8:00 – 18:30</li>
+          <li data-dias="0">Domingo<br>9:00 – 18:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap pie-final">
+      <span>© <span id="anio">2026</span> Lavandería Spring · Antigua Guatemala</span>
+      <a href="#inicio">Volver arriba ↑</a>
+    </div>
+  </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script>
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'es',
-                includedLanguages: 'es,en',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-            }, 'google_translate_element');
-        }
-    </script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <!-- WhatsApp flotante -->
+  <a class="wa-flotante" href="https://api.whatsapp.com/send?phone=50245451368&text=Hola,%20quisiera%20informaci%C3%B3n%20sobre%20los%20servicios" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>
+  </a>
+
 </body>
-
 </html>
